@@ -1,0 +1,119 @@
+
+.app {
+    /*background-color: #b5b1b1;*/
+    margin-top: 5px;
+    padding-left: 20%;
+    padding-right: 20%;
+    margin-bottom: 10px;
+    word-break: break-all;
+
+
+}
+
+#app-noresult {
+    text-align: center;
+
+}
+
+.header {
+    text-align: center;
+}
+
+.book {
+
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-top: 5px;
+    background-color: #89CDA0;
+    text-align: left;
+
+
+}
+
+#book-descrition {
+    border: 0;
+    font-size: 22px;
+    text-align: left;
+
+
+}
+
+.book:hover {
+    box-shadow: 2px 2px 2px black;
+}
+
+.pauthor {
+    color: rgb(5, 4, 4);
+    padding: 2px;
+    margin-left: 2px;
+    font-style: italic;
+}
+
+.pbook {
+    color: rgb(85, 3, 3);
+    margin-left: 2px;
+    padding: 2px;
+    font-style: bold;
+}
+
+.description {
+    padding: 2px;
+    margin-left: 2px;
+    margin-top: 10px;
+    font-size: 15px;
+    text-align: justify;
+
+}
+
+.noresult {
+    color: red;
+    font-size: 15px;
+
+}
+
+.back {
+    margin-top: 15px;
+    margin-left: 5px;
+    background-image: url("../img/back.png");
+    width: 50px;
+    height: 50px;
+}
+
+
+.back:active {
+    margin-left: 15px;
+    background-image: url("../img/back2.png");
+    /*box-shadow: 5px 5px 5px 5px black;*/
+    border-radius: 30px;
+    width: 30px;
+    height: 30px;
+}
+
+
+
+@media only screen and (max-width: 350px) {
+    .app {
+        font-size: 30%;
+        padding-left: 0;
+        padding-right: 0;
+        margin-left: 2px;
+        margin-right: 2px;
+    }
+
+    .description {
+        font-size: 30%;
+        max-width: 100%;
+    }
+
+    #book-descrition {
+        font-size: 40%;
+    }
+
+    .back {
+        margin-top: 15px;
+        background-image: url("../img/back2.png");
+        background-repeat: no-repeat;
+        max-width: 80%;
+        max-height: 50%;
+    }
+}
