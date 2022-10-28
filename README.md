@@ -6,11 +6,12 @@ This is my second project with Javascript code.
 1. General info
 2. Description
 3. Technologies
-4. Installation
-5. Collaboration
-6. Know Bugs
-7. License
-8. Contact Information
+4. Javascript external libraries
+5. Installation
+6. Collaboration
+7. Know Bugs
+8. License
+9. Contact Information
 
 ## General info
 This is a project of Josuè Pizzo
@@ -25,8 +26,13 @@ Project created with:
 * CSS3
 * JavaScript
 
+##Javascript external libraries
+*Axios
+*Vite
+*lodash
+
 ## Installation
-* Click this link for watch website on Github https://jospi96.github.io/counter/ or in netifly https://jospi96javaadvance.netlify.app/
+* Click this link for watch website on netifly https://jospi96javaadvance.netlify.app/
 
 ## Collaboration
 * No collaboration
