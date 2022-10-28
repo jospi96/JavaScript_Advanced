@@ -26,10 +26,10 @@ Project created with:
 * CSS3
 * JavaScript
 
-##Javascript external libraries
-*Axios
-*Vite
-*lodash
+## Javascript external libraries
+* Axios
+* Vite
+* lodash
 
 ## Installation
 * Click this link for watch website on netifly https://jospi96javaadvance.netlify.app/
