@@ -1,5 +1,5 @@
 import axios from "axios";
-import _get require( "lodash/get");
+import _get from "lodash/get";
 
 const app = document.querySelector(".app");
 const form = document.querySelector(".textArea");
