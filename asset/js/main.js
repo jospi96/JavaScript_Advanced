@@ -1,5 +1,5 @@
 import axios from "axios";
-import _get from "lodash/get";
+import _ from "lodash";
 
 const app = document.querySelector(".app");
 const form = document.querySelector(".textArea");
@@ -25,6 +25,7 @@ const data = async (mess, path) => {
             app.setAttribute("id", "app-noresult");
             app.append(paragrafer);
             
+            
         }
     }
     catch (e) {
@@ -33,8 +34,7 @@ const data = async (mess, path) => {
         app.setAttribute("class","noresult");
         app.setAttribute("id", "app-noresult");
         app.append(paragrafer);
-        
-
+        return null;
         
 
     }
@@ -49,10 +49,10 @@ form.addEventListener("submit", function (e) {
 });
 
 async function loadPresentationList(resp) {
-    let bookList= _get(resp,"works","erorre");
+    let bookList= _.get(resp,"works","error");// e = error in the api request
     
     
-    if (bookList.length > 0) {
+    if (!_.join(bookList,"")==="error" || bookList.length>0) {//if dont have a network error
         const bookInt = document.createElement("div");
 
         bookInt.setAttribute("id", "book-descrition");
@@ -106,7 +106,9 @@ function bookAuthor(autors, book) {
 
 async function BookListLoad(name) {
     let first_response = await data(name, "/subjects/");  
+    if(first_response !=null ){
     loadPresentationList(first_response);
+    }
 }
 async function loadDescription(sing_resp, book, first_response) {
     let response = await data(sing_resp.key, "");
